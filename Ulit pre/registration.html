@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register - Charles</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+ 
+
+  <style>
+    body {
+      background-color: #001f3f; /* Navy blue background */
+      color: #ffd700; /* Gold text color */
+    }
+  </style>
+</head>
+<body>
+  <section class="vh-100">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card shadow-lg" style="border-radius: 1rem; background-color: rgba(255, 255, 255, 0.9);">
+            <div class="card-body p-5 text-center">
+              <h3 class="mb-5">Register</h3>
+              <form id="registrationForm">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="name" placeholder="Your Name" required />
+                  <label for="name">Full Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="email" placeholder="name@example.com" required />
+                  <label for="email">Email address</label>
+                </div>
+                <div class="form-floating mb-4">
+                  <input type="password" class="form-control" id="password" placeholder="Password" required />
+                  <label for="password">Password</label>
+                </div>
+                <button class="btn btn-warning btn-lg w-100 mb-4" type="submit">Register</button>
+                <p class="mb-0">Already have an account?</p>
+                <a href="login.html" class="text-warning fw-bold">Login</a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    document.getElementById('registrationForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+
+      // You can add your registration logic here
+
+      alert(`Registered successfully!\nName: ${name}\nEmail: ${email}`);
+      window.location.href = `welcome.html?email=${encodeURIComponent(email)}&name=${encodeURIComponent(name)}`;
+    });
+  </script>
+</body>
+</html>

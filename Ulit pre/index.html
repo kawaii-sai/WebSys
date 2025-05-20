@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <meta charset="UTF-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charles AKA Jordan Poole</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">
+      <img src="image/nulogo.png" alt="NU Logo" width="100%" height="50" />
+    </div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li>
+        <button onclick="location.href='login.html'" 
+          style="padding: 8px 16px; background-color: gold; border: none; border-radius: 4px; color: black; font-weight: bold; cursor: pointer;">
+          Login
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-img">
+      <img src="image/fit.jpg_large" alt="Activity Photo" />
+    </div>
+    <div class="hero-text">
+      <div class="badges">
+        <span class="badge">
+          <img src="image/gsw.png" alt="GSW" />
+          Point Guard/Shooting Guard
+        </span>
+      </div>
+      <h1>Hi! My name is Charles</h1>
+      <p>A 2nd Year University student currently taking up Information Technology majoring in Mobile and Web Applications.</p>
+      <a href="resume.html" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <!-- Skill Cards -->
+      <div class="skill-card">
+        <img src="https://img.icons8.com/plasticine/100/apple-clock.png" alt="Punctual" />
+        <h3>Punctual</h3>
+        <p>Arrives on time for work.</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://img.icons8.com/ios/50/running-rabbit.png" alt="Fast" />
+        <h3>Fast but Efficient</h3>
+        <p>Moves quick without compromising quality.</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://img.icons8.com/nolan/64/quick-witted--v1.png" alt="Smart" />
+        <h3>High IQ</h3>
+        <p>Can find a solution to any problem ASAP.</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://img.icons8.com/ios-filled/100/thinking-male.png" alt="Respectful" />
+        <h3>Transparent</h3>
+        <p>Speaks respectfully to all people.</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://img.icons8.com/ios-filled/100/laptop-coding.png" alt="IDE" />
+        <h3>Can use different IDEs</h3>
+        <p>Efficient at using various coding platforms.</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://img.icons8.com/ios-filled/100/meeting-room.png" alt="Leader" />
+        <h3>Team Leader</h3>
+        <p>Great at collaborating with others.</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://img.icons8.com/dotty/80/listening.png" alt="Listener" />
+        <h3>Good Listener</h3>
+        <p>Open to feedback and recommendations.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <div class="project-image">
+          <img src="image/doktor.png" alt="MedTrak" />
+        </div>
+        <div class="project-content">
+          <h3>MedTrak</h3>
+          <p>Doctors are able to check their patients’ status on the go.</p>
+          <div class="project-tags">
+            <span>JavaScript</span>
+            <span>Python</span>
+            <span>MySQL</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-image video-container">
+          <iframe src="https://www.youtube.com/embed/NpEaa2P7qZI?si=YZfKAcZ5xIFZx8VC" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="project-content">
+          <h3>TechFiesta 2.0</h3>
+          <p>Students showcase their game projects during cultural festivals.</p>
+          <div class="project-tags">
+            <span>Java</span>
+            <span>Android Studio</span>
+            <span>Firebase</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-image">
+          <img src="image/carrent.png" alt="Car Rental Website" />
+        </div>
+        <div class="project-content">
+          <h3>Car Rental Website</h3>
+          <p>Rent a car from the comfort of your home.</p>
+          <div class="project-tags">
+            <span>React</span>
+            <span>Node.js</span>
+            <span>MySQL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container" style="text-align: center; padding: 1rem;">
+    
+    <!-- Smaller logo -->
+    <div class="footer-logo">
+      <img src="image/kirby.png" alt="Charles Ethan C. Laforteza" style="max-width: 80px; height: auto;" />
+    </div>
+    
+    <!-- Smaller icons -->
+    <div class="footer-links" style="margin: 0.5rem 0;">
+      <a href="https://www.facebook.com/charles.lafortz/" target="_blank">
+        <img src="image/fb.png" alt="Facebook" style="width: 24px; height: 24px; margin: 0 8px;" />
+      </a>
+      <a href="https://www.instagram.com/charles_la4tz/" target="_blank">
+        <img src="image/insta.jpeg" alt="Instagram" style="width: 24px; height: 24px; margin: 0 8px;" />
+      </a>
+      <a href="https://github.com/kawaii-sai" target="_blank">
+        <img src="image/github.png" alt="GitHub" style="width: 24px; height: 24px; margin: 0 8px;" />
+      </a>
+    </div>
+
+    <p class="footer-text" style="font-size: 0.9rem;">© 2025 Charles Ethan Laforteza. All rights reserved.</p>
+  </div>
+</footer>
+
